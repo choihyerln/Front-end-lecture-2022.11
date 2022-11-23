@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식</title>
+</head>
+<body style="margin-left: 40px; margin-top: 40px;">
+    <h3>입력 양식</h3>
+    <hr>
+    <!-- 제출 버튼을 누르면 입력된 값을
+        action에서 정한 위치로 method에서 정한 방법으로 서버에게 전송 -->
+    
+    <form action="" method="get" enctype="multipart/form-data">
+        <table border="3">
+            <tr>
+                <td>텍스트</td>
+                <td><input type="text" name="a" id="a"></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type="password" name="b" id="pwd"></td>
+            </tr>
+            <tr>
+                <td>히든</td>
+                <td><input type="hidden" name="id" value="primart key"></td>
+            </tr>
+            <tr>
+                <td>체크박스</td>
+                <td>
+                    <input type="checkbox" name="c" id="" value="1"><label>사과</label>
+                    <input type="checkbox" name="c" id="" value="2">포도
+                    <input type="checkbox" name="c" id="" value="3">참외
+                    <input type="checkbox" name="c" id="" value="4">수박
+                </td>
+            </tr>
+            <tr>
+                <td>셀렉트</td>
+                <td>
+                    <select name="d" id="">
+                        <option value="1">김밥</option>
+                        <option value="2">떡볶이</option>
+                        <option value="3">순대</option>
+                        <option value="4">어묵</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>셀렉트 멀티</td>
+                <td>
+                    <select name="e" id="" multiple>
+                        <option value="1">김밥</option>
+                        <option value="2">떡볶이</option>
+                        <option value="3">순대</option>
+                        <option value="4">어묵</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>라디오</td>
+                <td>
+                    <input type="radio" name="f" id="" value="male">남자
+                    <input type="radio" name="f" id="" value="female">여자
+                </td>
+            </tr>
+            <tr>
+                <td>파일</td>
+                <td>
+                    <input type="file" name="h" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Text area</td>
+                <td>
+                    <textarea name="g" id="" cols="40" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="제출">
+                    <input type="reset" value="입력값 취소">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
