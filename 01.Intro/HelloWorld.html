@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  <!-- HTML 5 의미 -->
+<html lang="ko"> <!-- 웹 페이지의 사용 언어를 구글 검색 엔진에 제공 -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 반응형 웹을 만들어줌 -->
+    <title>Title</title> <!-- 본문에 영향 주지 않음 -->
+    <script>
+        function a(){
+            alert("경고창을 띄웁니다.");
+        }
+    </script>
+    <script src="hello.js"></script>
+    <style>
+        body    {
+            margin-left: 50px; margin-top: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="hello.css">
 </head>
-<body>
-    <h1>Hello World</h1>
+<body onload ="b()">
+    <h1 style="color: yellow; background: gray;"> Hello World</h1>
+    <hr>
+    <p>하나의 문단입니다.</p>
+    <h3 title="header">H3 태그입니다.</h3>
+    <!-- <img src="../img/the_dog_teddy21-___CKAgjMBnjI3___-.jpeg" alt="Teddy">  --> 
+    <img src="../img/output_1548469651.jpeg" alt="두부">
 </body>
 </html>
