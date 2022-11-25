@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 패턴</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body { width: 960px; margin: 0 auto; overflow: hidden;}
+        #menu {width: 260px; float: left;}
+        #section { width: 700px; float: right; }
+        li { list-style: none; color: red;}
+
+        @media screen and (max-width: 767px) {
+            body { width: auto; }
+            #menu { width: auto; float: none; }
+            #section { width: auto; float: none; }
+            li {color: green;}
+        }
+    </style>
+</head>
+<body style="margin: 40px;">
+    <h3>반응형 웹 패턴</h3>
+    <hr>
+    <div id="menu">
+        <ul>
+            <li>메뉴 A</li>
+            <li>메뉴 B</li>
+            <li>메뉴 C</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, harum?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dolore, nostrum sed asperiores aliquid, ducimus expedita totam adipisci deleniti sequi ipsa ipsam. Maiores et doloremque, illum exercitationem nemo facere totam est quis sunt ratione delectus animi odit praesentium quasi. Quasi quo officia quos, mollitia ipsum assumenda eos a velit itaque, earum corrupti placeat consequuntur. Enim recusandae iste eum. Est voluptates provident sapiente suscipit corrupti voluptatem earum similique officiis commodi ipsam magnam unde libero in quia, magni beatae obcaecati, assumenda doloremque eius. At quam, recusandae minima corporis eveniet velit nesciunt asperiores! Totam porro omnis minima. Error at nesciunt voluptatem dignissimos delectus.</p>
+    </div>
+</body>
+</html>
