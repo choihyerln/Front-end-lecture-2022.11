@@ -8,7 +8,7 @@ const cb = function() {
 }
 // cb();
 
-callFiveTimes(cb);
+// callFiveTimes(cb);
 
 function cb2() {
     console.log('함수가 호출되었음.')

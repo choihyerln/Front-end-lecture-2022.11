@@ -14,7 +14,7 @@ if (bMonth < tMonth) {
 else if (bMonth > tMonth) {
     fullAge = tYear - bYear - 1;
 }
-else {
+else {                              // 생월 = 현재월 인 경우
     if (bDay <= tDay){
         fullAge = tYear - bYear;
     }

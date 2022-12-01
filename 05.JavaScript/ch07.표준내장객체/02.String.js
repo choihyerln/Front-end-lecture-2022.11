@@ -27,8 +27,6 @@ console.log(result);
 // J / 10 == 3.3
 
 
-
-
 let totalSeconds = 0;
 for (let hour = 0; hour < 24; hour++) {
     for (let min = 0; min < 60; min++){
@@ -95,3 +93,24 @@ const now = datetime();
 console.log(now);       // 2022-11-01 15:45:40
 
 console.log(now.substring(2,16));
+
+
+// 1부터 1000까지의 숫자에서 0은 몇번, 1은 몇번, ..., 9는 몇번이 들어가는가?
+let numbers = '';
+for (let i=1; i <= 1000; i++)
+    numbers += i;
+
+// split 메소드 활용
+let obj = {};
+for (let i = 0; i<=9; i++){
+    obj[String(i)] = numbers.split(String(i)).length - 1;
+}
+console.log(obj);
+
+// 정규표현식 활용
+let reArray = [];
+for (let i=0; i<=9; i++) {
+    const re = new RegExp('[^' + i + ']', 'g');
+    reArray.push(numbers.replace(re, '').length);
+}
+console.log(reArray);

@@ -2,7 +2,7 @@
 let array = [1, 2, 3];
 console.log(array);
 
-array[array.length] = 200;
+array[array.length] = 100;
 console.log(array);
 
 array.push('fantastic');

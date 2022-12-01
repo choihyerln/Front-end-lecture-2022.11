@@ -8,8 +8,9 @@ for (let i=0; i<array.length; i++)
     console.log(array[i]);
 
 // Enhanced for-loop
-console.log("Enhanced for-loop")
+console.log("\nEnhanced for-loop")
 for (let item of array)
     console.log(item);
 
 console.log(array);
+console.log(array.toString());      // [] 가 빠진 상태
