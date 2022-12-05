@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>CSS 선택자</title>
+    <script>
+        // #fruit.national ==> backgroundColor: yellow
+        // #food.foreign ==> color: red
+        // .foreign ==> backgroundColor: beige
+        // window.onload = function() {
+        //     let lis = document.querySelectorAll('#fruits > .national')
+        //     for (let li of lis)
+        //         li.style.backgroundColor = 'yellow';
+        //     lis = document.querySelectorAll('#food .foreign')
+        //     for (let li of lis)
+        //         li.style.color = 'red';
+        //     lis = document.querySelectorAll('.foreign')
+        //     for (let li of lis)
+        //         li.style.backgroundColor = 'beige';
+        // }
+
+         $(document).ready(function() {
+            $('#fruits').find('.national').css('backgroundColor', 'yellow');
+            $('#food .foreign').css('color', 'red');
+            $('.foreign').css('backgroundColor', 'beige');
+            }); 
+    </script>
+</head>
+<body style="margin: 40px;">
+    <ul id="fruits">내가 좋아하는 과일
+        <li class="national">사과</li>
+        <li class="foreign">바나나</li>
+        <li class="national">감</li>
+        <li class="foreign">파인애플</li>
+    </ul>
+    <ul id="food">내가 좋아하는 음식
+        <li class="national">김치찌개</li>
+        <li class="foreign">파스타</li>
+        <li class="national">갈비찜</li>
+    </ul>
+</body>
+</html>
